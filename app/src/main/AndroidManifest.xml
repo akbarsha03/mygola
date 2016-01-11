@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.shaapps.mygola" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.LaunchScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainInfoActivity"
+            android:label="@string/title_activity_details_list"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.DetailInfoActivity"
+            android:label="Details"
+            android:parentActivityName=".activities.MainInfoActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainInfoActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BookmarkedActivity"
+            android:label="@string/title_activity_bookmarked"
+            android:parentActivityName=".activities.MainInfoActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.shaapps.mygola.activities.MainInfoActivity" />
+        </activity>
+        <activity
+            android:name=".AboutMe"
+            android:label="@string/title_activity_about_me"
+            android:parentActivityName=".activities.DetailInfoActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.shaapps.mygola.activities.DetailInfoActivity" />
+        </activity>
+    </application>
+
+</manifest>
