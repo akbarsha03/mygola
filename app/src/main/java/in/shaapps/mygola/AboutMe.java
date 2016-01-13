@@ -13,6 +13,13 @@ public class AboutMe extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // Feature 1
+        // Feature 1
+        // Feature 1
+        // Feature 1
+        // Feature 1
+        // Feature 1
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
