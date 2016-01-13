@@ -16,6 +16,8 @@ public class AboutMe extends AppCompatActivity {
         // Feature 1
         // Feature 1
         // Feature 1
+        // Feature 1 a update
+        // Feature 1 b update
         // Feature 1
         // Feature 1
         // Feature 1
